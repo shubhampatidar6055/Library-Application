@@ -15,3 +15,7 @@ class bookapi(generics.CreateAPIView):
 class issuebook(generics.CreateAPIView):
     queryset = Issuebook.objects.all()
     serializer_class = Issuebookserializer
+
+class MyModelViewSet(viewsets.ModelViewSet):
+    queryset = MyModel.objects.all()
+    serializer_class = MyModelSerializer

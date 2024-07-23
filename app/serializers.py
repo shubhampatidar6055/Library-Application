@@ -15,3 +15,8 @@ class Issuebookserializer(serializers.ModelSerializer):
     class Meta:
         model = Issuebook
         fields ='__all__'
+
+class ShowListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = '__all__' 
